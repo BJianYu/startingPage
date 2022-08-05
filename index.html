@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>兼雨起始页</title>
     <meta name="description" content="浏览器起始页">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
 </head>
 
 <body>
+    <!-- 搜索功能 -->
+    <div>
+        <input type="text" placeholder="请输入搜索内容" id="search">
+        <button id="searchButton" onclick="search()">搜索</button>
+    </div>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function () {
